@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+    "module": "CommonJS",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "sourceMap": false,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "incremental": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    },
+    "include": ["src/**/*", "__tests__/**/*", "src/adapters/secondary"]
+  }
