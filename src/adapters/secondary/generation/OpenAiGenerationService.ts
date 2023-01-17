@@ -45,8 +45,9 @@ export class OpenAIGenerationService implements GenerationService {
         {
           prompt: input,
           n: 1,
-          size: '256x256',
-          response_format: 'b64_json',
+          size: '512x512',
+          //response_format: 'b64_json',
+          response_format: 'url',
         },
         {
           validateStatus: function (status) {
@@ -55,7 +56,7 @@ export class OpenAIGenerationService implements GenerationService {
         },
       )
 
-      return Right(urls[0].b64_json)
+      return Right(urls[0].url)
     } catch (err) {
       console.log(err)
       return Left(err)
